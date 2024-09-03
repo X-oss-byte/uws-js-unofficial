@@ -103,31 +103,31 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: download windows binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: windows-binaries
           path: binaries
 
       - name: download macos-12 binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: macos-12-binaries
           path: binaries
 
       - name: download ubuntu-20.04 binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ubuntu-20.04-binaries
           path: binaries
 
       - name: download aarch64 binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: aarch64-binaries
           path: binaries
 
       - name: download armv7 binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: armv7-binaries
           path: binaries
